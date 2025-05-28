@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>website portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <style>
+    @font-face {
+      font-family: 'Rumble';
+      src: url('Rumble.ttf') format('truetype');
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-image: url("achtergrond combo.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .content {
+      color: black;
+      margin-bottom: 40px;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 2.5rem;
+      text-align: center;
+      font-family: 'Rumble';
+    }
+
+   
+    .triangle-left,
+    .triangle-right {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      cursor: pointer;
+    }
+
+    .triangle-left {
+      left: 0;
+      border-width: 50px 50px 50px 0;
+      border-color: transparent #084791 transparent transparent;
+	  margin-left: 100px;
+    }
+
+    .triangle-right {
+      right: 0;
+      border-width: 50px 0 50px 50px;
+      border-color: transparent transparent transparent #084791;
+	  margin-right: 100px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="content">
+    <p style="font-family: 'Rumble';">Welcome to the website</p>
+  </div>
+
+  <a href="html avatar.html" class="triangle-left"></a>
+  <a href="html about me.html"class="triangle-right"></a>
+</body>
+</html>
